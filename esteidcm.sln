@@ -1,13 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "esteidcm", "esteidcm.vcproj", "{D6F0C4FE-2A8F-4CC3-BC75-E8054DFC124A}"
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "esteidcm", "esteidcm.vcxproj", "{D6F0C4FE-2A8F-4CC3-BC75-E8054DFC124A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp", "smartcardpp.vcproj", "{BADFC33C-025A-4A03-857F-2C3E3ABB2E15}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp", "smartcardpp.vcxproj", "{BADFC33C-025A-4A03-857F-2C3E3ABB2E15}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp-test", "smartcardpp-test.vcproj", "{E1BAA0DA-6F9F-4DFC-8BC5-DC6080943750}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp-test", "smartcardpp-test.vcxproj", "{E1BAA0DA-6F9F-4DFC-8BC5-DC6080943750}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp-unit-tests", "smartcardpp-unit-tests.vcproj", "{3EB1C367-F399-49C0-B2AF-11988FE77D46}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "smartcardpp-unit-tests", "smartcardpp-unit-tests.vcxproj", "{3EB1C367-F399-49C0-B2AF-11988FE77D46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
