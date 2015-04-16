@@ -30,6 +30,7 @@ install:
   - cmd: git submodule update --init --recursive
   - ps: Start-FileDownload 'http://slproweb.com/download/Win32OpenSSL-1_0_2a.exe'
   - ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
+  
 platform: x64
 configuration: RelWithDebInfo
 build:
@@ -44,6 +45,8 @@ build:
   verbosity: normal
 
 before_build:
+
 after_build:
+
 build_script:
-build: off
+
