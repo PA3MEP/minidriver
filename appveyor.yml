@@ -1,0 +1,10 @@
+environment: off
+init: off
+install:
+  - cmd: git submodule update --init --recursive
+  - ps: Start-FileDownload 'http://slproweb.com/download/Win32OpenSSL-1_0_2a.exe'
+  - ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
+build: off
+test_script: off
+after_test: off
+artifacts: off
