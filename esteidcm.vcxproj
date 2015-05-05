@@ -114,11 +114,13 @@
     <OutDir>$(SolutionDir)\$(Configuration)\$(ProjectName)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)\$(Configuration)\$(ProjectName)\$(Platform)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <OutDir>$(SolutionDir)\$(Configuration)\$(ProjectName)\$(Platform)\</OutDir>
     <IntDir>$(SolutionDir)\$(Configuration)\$(ProjectName)\$(Platform)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
