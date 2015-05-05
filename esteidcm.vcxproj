@@ -291,11 +291,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ProjectReference Include="smartcardpp-test.vcxproj">
-      <Project>{e1baa0da-6f9f-4dfc-8bc5-dc6080943750}</Project>
-      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
-      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
-    </ProjectReference>
     <ProjectReference Include="smartcardpp.vcxproj">
       <Project>{badfc33c-025a-4a03-857f-2c3e3abb2e15}</Project>
       <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
