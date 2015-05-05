@@ -2,11 +2,11 @@ version: 1.0.{build}
 skip_tags: true
 os: Windows Server 2012 R2
 install:
-  cmd: git submodule update --init --recursive
-  ps: Start-FileDownload 'http://slproweb.com/download/Win32OpenSSL-1_0_2a.exe'
-  ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
-  ps: Start-FileDownload 'http://slproweb.com/download/Win64OpenSSL-1_0_2a.exe'
-  ps: Start-Process "Win64OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
+  - cmd: git submodule update --init --recursive
+  - ps: Start-FileDownload 'http://slproweb.com/download/Win32OpenSSL-1_0_2a.exe'
+  - ps: Start-FileDownload 'http://slproweb.com/download/Win64OpenSSL-1_0_2a.exe'
+  - ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
+  - ps: Start-Process "Win64OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
 configuration: RelWithDebInfo
 platform: x64
 build:
