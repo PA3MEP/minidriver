@@ -1,52 +1,8 @@
-version: 3.11.0.{build}
-branches:
-  only:
-    - master
+version: 1.0.{build}
 skip_tags: true
-os: Windows Server 2012
-init:
-  - git config --global core.autocrlf input
-
-clone_folder: c:\projects\myproject
-shallow_clone: true
-clone_depth: 5
-hosts:
-  queue-server: 127.0.0.1
-  db.server.com: 127.0.0.2
-environment:
-
-matrix:
-  fast_finish: true
-  allow_failures:
-    - platform: Win32
-      configuration: RelWithDebInfo
-    - platform: x64
-      configuration: RelWithDebInfo
-
-services:
-
-
-install:
-  - cmd: git submodule update --init --recursive
-  - ps: Start-FileDownload 'http://slproweb.com/download/Win32OpenSSL-1_0_2a.exe'
-  - ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
-  
-platform: x64
+os: Windows Server 2012 R2
 configuration: RelWithDebInfo
+platform: x64
 build:
-  parallel: true                  # enable MSBuild parallel builds
-  project: esteidcm.sln      # path to Visual Studio solution or project
-  publish_wap: false               # package Web Application Projects (WAP) for Web Deploy
-  publish_wap_xcopy: false         # package Web Application Projects (WAP) for XCopy deployment
-  publish_azure: false             # package Azure Cloud Service projects and push to artifacts
-  publish_nuget: false             # package projects with .nuspec files and push to artifacts
-  publish_nuget_symbols: false     # generate and publish NuGet symbol packages
-  include_nuget_references: false  # add -IncludeReferencedProjects option while packaging NuGet artifacts
+  project: esteidcm.sln
   verbosity: normal
-
-before_build:
-
-after_build:
-
-build_script:
-
