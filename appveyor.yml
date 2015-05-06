@@ -10,9 +10,9 @@ install:
   - ps: Start-FileDownload 'http://download.microsoft.com/download/2/C/9/2C93059C-0532-42DF-8C24-9AEAFF00768E/cngsdk.msi'
   - ps: Start-Process "Win32OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
   - ps: Start-Process "Win64OpenSSL-1_0_2a.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
-  - ps: Start-Process "vcredist_x86.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
-  - ps: Start-Process "vcredist_x64.exe" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
-  - ps: Start-Process "cngsdk.msi" -ArgumentList "/silent /verysilent /sp- /suppressmsgboxes" -Wait
+  - ps: Start-Process "vcredist_x86.exe" -ArgumentList "/quiet" -Wait
+  - ps: Start-Process "vcredist_x64.exe" -ArgumentList "/quiet" -Wait
+  - ps: Start-Process "cngsdk.msi" -ArgumentList "/quiet" -Wait
 configuration: RelWithDebInfo
 platform: x64
 build:
