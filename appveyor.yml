@@ -22,3 +22,6 @@ configuration:
 build:
   project: esteidcm.sln
   verbosity: normal
+  
+artifacts:
+  - path: $(configuration)\esteidcm\$(PLATFORM)\*.dll
